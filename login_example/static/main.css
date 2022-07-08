@@ -1,0 +1,21 @@
+body {
+  background-color:yellowgreen;
+}
+
+.index {
+  max-width: 470px;
+  padding:10px 35px 35px 35px;
+  margin:0 auto;
+  background-color:darkgray;
+  border:1px solid rgba(0,0,0,0.1);
+}
+
+.form-index-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}

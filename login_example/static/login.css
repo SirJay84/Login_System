@@ -1,0 +1,42 @@
+body {
+  background-color:yellowgreen;
+}
+
+.form-signin {
+  max-width: 300px;
+  padding:10px 35px 35px 35px;
+  margin:0 auto;
+  background-color:darkgray;
+  border:1px solid rgba(0,0,0,0.1);
+  border-radius: 15px;
+}
+
+.form-signin-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-control {
+  position: relative;
+  font-size:14px;
+  height:auto;
+  padding: 5px;
+  box-sizing:border-box;
+}
+
+input[type="password, confirm password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[type="text"] {
+  margin-bottom: -1px;
+}
