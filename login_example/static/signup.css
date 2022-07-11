@@ -3,7 +3,7 @@ body {
 }
 
 .form-signin {
-  max-width: 300px;
+  max-width: 263px;
   padding:10px 35px 35px 35px;
   margin:0 auto;
   background-color:darkgray;
@@ -12,7 +12,7 @@ body {
 }
 
 .form-signin-heading {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -41,3 +41,8 @@ input[type="password, confirm password"] {
   border-bottom-right-radius: 0;
 }
 
+.btn {
+  border-radius:20px;
+  padding:3px;
+  width:190px;
+}

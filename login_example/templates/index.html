@@ -1,16 +1,13 @@
-{% extends "bootstrap/base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html"%}
 
-{% block title %}
-Home
+
+{% block title %}Home{% endblock%}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('.static',filename='main.css')}}">
 {% endblock %}
 
-{% block styles %}
-{{super()}}
-<link rel="stylesheet" href="{{url_for('.static', filename='main.css')}}">
-{% endblock %}
-
-{% block body %}
+{% block content %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -19,8 +16,8 @@ Home
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
+        <b><a class="nav-link active" aria-current="page" href="#">Hi, {{username}}!</a></b>
+        <a class="nav-link" href="">Settings</a>
         <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
       </div>
     </div>
@@ -28,7 +25,7 @@ Home
 </nav>
 <div class="container">
   <form class="index">
-    <h2 class="form-index-heading">Hello, {{email}}</h2>
+    <h2 class="form-index-heading">Bootstrap Starter Template</h2>
     <p>Use this document as a way to quickly start any new project.</p>
     <p>All you get is this text and mostly barebones HTML document.</p>
   </form>

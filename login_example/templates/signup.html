@@ -1,26 +1,25 @@
-{% extends "bootstrap/base.html" %}
-{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html"%}
 
-{% block title %}
-Sign up
+{% block title %}signup{% endblock%}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('.static',filename='signup.css')}}">
 {% endblock %}
 
-{% block styles %}
-{{super()}}
-<link rel="stylesheet" href="{{url_for('.static', filename='signup.css')}}">
-{% endblock %}
-
-{% block body %}
+{% block content %}
 <div class="container">
   <form class="form-signin" method="POST" action="/signup">
     <h2 class="form-signin-heading">Sign Up</h2>
-    {{form.hidden_tag()}}
-    {{wtf.form_field(form.firstname)}}
-    {{wtf.form_field(form.lastname)}}
-    {{wtf.form_field(form.email)}}
-    {{wtf.form_field(form.password)}}
+    {{ form.csrf_token }}
+    {{ form.firstname.label }} {{ form.firstname }}
+    {{ form.lastname.label }} {{ form.lastname }}
+    {{ form.username.label }} {{ form.username }}
+    {{ form.email.label }} {{ form.email }}
+    {{ form.password.label }} {{ form.password }}
+    <div>
+    <br>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+    </div>
   </form>
 </div>
-
 {% endblock %}

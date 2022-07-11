@@ -3,16 +3,16 @@ body {
 }
 
 .form-signin {
-  max-width: 300px;
+  max-width: 263px;
   padding:10px 35px 35px 35px;
   margin:0 auto;
   background-color:darkgray;
   border:1px solid rgba(0,0,0,0.1);
-  border-radius: 15px;
+  border-radius:10px;
 }
 
 .form-signin-heading {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -30,13 +30,22 @@ body {
 }
 
 input[type="password, confirm password"] {
-  margin-bottom: 20px;
-  border-top-left-radius: 0;
+  margin-bottom: -1px;
+  
+ 
+  /* border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; */
 }
 
 input[type="text"] {
-  margin-bottom: -1px;
+  margin-bottom: 5px;
+  
+}
+
+.btn {
+  border-radius:20px;
+  padding:3px;
+  width:190px;
 }
